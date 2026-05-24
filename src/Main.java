@@ -1,7 +1,11 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("ola");
+        List<SteamGame> games = CSVReader.readCSV("games.csv");
+
+        List<SteamGame> gamesParaSamara = new ArrayList<>(games);
+        List<SteamGame> gamesParaJhon = new ArrayList<>(games);
 
     }
 }
